@@ -1,6 +1,6 @@
 # Petinder 🐾
 
-**Petinder** es un sitio web dedicado a fomentar la adopción de animales, ofreciendo información sobre la organización y opciones para colaborar como socio. Además, incluye detalles sobre productos relacionados con la membresía.
+**Petinder** es un sitio web dedicado a fomentar la adopción de animales, ofreciendo información sobre la organización y opciones para colaborar como socio. Además, incluye información sobre productos relacionados con la membresía.
 
 
 ## Estructura del Sitio
@@ -13,7 +13,7 @@
 
 ## Objetivo
 
-El objetivo de **Petinder** es facilitar el proceso de adopción, promover la concienciación sobre el cuidado animal y fomentar la participación activa a través de la membresía.
+El objetivo de **Petinder** es facilitar el proceso de adopción, promover la concienciación sobre el cuidado animal y fomentar la participación activa en la organización.
 
 
 ## Tecnologías Utilizadas

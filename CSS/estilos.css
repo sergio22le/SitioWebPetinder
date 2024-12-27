@@ -135,7 +135,6 @@ header .menu-links a:hover {
     color: var(--primary-color);
 }
 
-/* No funciona */
 header .menu-links li.active a {
     font-weight: 700;
 }

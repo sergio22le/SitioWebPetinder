@@ -18,8 +18,8 @@ El objetivo de **Petinder** es facilitar el proceso de adopción, promover la co
 
 ## Tecnologías Utilizadas
 
-- **HTML5** - Para la estructura de las páginas.
-- **CSS3** - Para el diseño y estilización (futuro desarrollo).
+- **HTML** - Para la estructura de las páginas.
+- **CSS** - Para el diseño y estilización (futuro desarrollo).
 - **JavaScript** *(próximamente)* - Para funcionalidades interactivas.
 
 

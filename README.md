@@ -21,8 +21,3 @@ El objetivo de **Petinder** es facilitar el proceso de adopción, promover la co
 - **HTML** - Para la estructura de las páginas.
 - **CSS** - Para el diseño y estilización (futuro desarrollo).
 - **JavaScript** *(próximamente)* - Para funcionalidades interactivas.
-
-
-## Cómo contribuir
-
-Si deseas contribuir a este proyecto, siéntete libre de crear un fork, trabajar en mejoras o reportar problemas en el futuro repositorio.

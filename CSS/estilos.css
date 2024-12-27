@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
+
+/* REGLAS GENERALES */
+
+/*===============================================================*/
+/* Definir las variables de colores */
+:root {
+    --text-color: rgb(23, 23, 23);
+    --primary-color: rgb(91, 73, 254);
+    --secondary-color: rgb(125, 232, 140);
+    --secondary-light-color: rgb(207, 243, 125);
+}
+/*===============================================================*/
+
+/*===============================================================*/
+/* Reset margins y paddings */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*===============================================================*/
+
+/*===============================================================*/
+/* Estilo generales */
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--text-color);
+    background-color: #f9f9f9;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none; /* Quita la linea de subrayado de los enlaces */
+    background-color: transparent;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+ul, li {
+    list-style: none; /* Quita los guiones/puntos de las listas */
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, .title {
+    font-family: "Poppins", sans-serif;
+}
+
+.title {
+    font-weight: 800;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+.img-fluid {
+    max-width: 100%;
+}
+/*===============================================================*/
+
+/* Las reglas que van a continuacion consiguen que los elementos dentro del elemento container se adapten a los diferentes dispositivos.
+La clase .container define un contenedor que ocupa el 100% de la pantalla del dispositivo, con un relleno a izquierda y derecha de 15px,
+y margenes por izquierda y derecha automaticos.
+Ademas utiliza medias queries, con las medias queries se indica la maxima anchura del container cuando los dispositivos tengan la anchura
+minima indicada por el punto de ruptura, "breakpoint" */
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media(min-width:992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media(min-width:1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media(min-width:1400px) {
+    .container {
+        max-width: 1300px;
+    }
+}
+/*===============================================================*/
+
+/*===============================================================*/
+/* Bloques generales de la plantilla */
+header {
+    min-height: 115px;
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(13, 10, 44, 0.04);
+    color: black;
+}
+
+header .link-logo {
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+header .logo {
+    height: 50px;
+    width: auto;
+    margin-right: 5px;
+}
+
+header .menu-links li {
+    margin-right: 15px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+header .menu-links a {
+    color: black;
+}
+
+header .menu-links a:hover {
+    color: var(--primary-color);
+}
+
+/* No funciona */
+header .menu-links li.active a {
+    font-weight: 700;
+}
+
+main {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+main a {
+    border-bottom: 1px dotted var(--primary-color);
+}
+
+main a:hover {
+    border-color: var(--secondary-color);
+}
+
+footer {
+    width: 100%;
+    background: var(--primary-color);
+    color: white;
+    padding: 20px 0;
+    margin-top: auto;
+    font-size: 0.9rem;
+    font-weight: 500;
+    height: 90px;
+    left: 0px;
+    bottom: 0px;
+}
+
+footer a {
+    color: white;
+}
+
+footer .legal-links {
+    margin-top: 10px;
+}
+
+footer .legal-links li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/*===============================================================*/
+
+/*===============================================================*/
+/* Formatear pagina HOME */
+.page-home header {
+    background: transparent;
+    box-shadow: none;
+    position: fixed;
+    width: 100%;
+}
+
+.page-home {
+    background: linear-gradient(7deg, var(--secondary-light-color) 0%, var(--secondary-color));
+}
+
+.page-home main {
+    padding: 0;
+}
+
+.page-home .title {
+    font-size: 3.4rem;
+    margin-bottom: 15px;
+    line-height: 4rem;
+}
+
+.page-home .title span {
+    color: white;
+}
+
+.page-home .featured {
+    max-width: 470px;
+}
+
+.page-home main .container {
+    min-height: calc(100vh - 90px);
+    background: url(../Imagenes/hero_image_bg.png) 100% 100% no-repeat;
+    background-size: 700px auto;
+    padding-top: 150px;
+    padding-bottom: 120px;
+}
+
+.page-home main .featured-text {
+    margin-bottom: 25px;
+}
+
+.search-bar .search-control {
+    padding-left: 45px;
+    height: 58px;
+    background: #fff url(../Imagenes/icon_search.svg) 5px 50% no-repeat;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+}
+
+/*===============================================================*/
+
+/*===============================================================*/
+/* Formatear pagina ABOUT */
+.page-about .title {
+    font-size: 2rem;
+}
+
+.page-about .img-fluid {
+    padding: 10px;
+    background-color: white;
+    border-color: var(--secondary-light-color);
+    border-width: 3px;
+    border-style: solid;
+}
+
+.page-about .imagen {
+    width: 60%;
+    align-items: left;
+}
+
+.page-about figcaption {
+    font-style: italic;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.page-about .filosofia-petinder {
+    width: 100%;
+    align-items: left;
+}
+
+/*===============================================================*/
+
+/*===============================================================*/
+/* Formatear pagina CAMISETAS */
+.page-tshirt main {
+    min-height: calc(100vh - 205px);
+}
+
+.page-tshirt .table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    align-items: center;
+}
+
+.page-tshirt .table caption {
+    color: white;
+    background-color: var(--primary-color);
+    padding: 20px;
+    border: 1px solid black;
+    border-bottom: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.page-tshirt .table, .table th, .table td {
+    border: 1px solid black;
+}
+
+.page-tshirt .table th {
+    background: var(--secondary-light-color);
+    padding: 5px 10px;
+}
+
+.page-tshirt thead th {
+    text-align: center;
+}
+
+.page-tshirt .table tbody th {
+    text-align: left;
+}
+
+.page-tshirt .table thead th:first-child {
+    background-color: var(--secondary-color);
+}
+
+.page-tshirt .table td {
+    background: white;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.page-tshirt .table tr:nth-child(odd) td {
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+/*===============================================================*/
+
+/*===============================================================*/
+/* Formatear pagina HAZTE SOCIO */
+.page-join .mensaje-unete {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.page-join form {
+    width: 50%;
+    align-items: left;
+}
+
+.page-join .formulario-socio fieldset {
+    background-color: white;
+    border: 1px solid var(--primary-color);
+    padding: 20px 30px;
+    margin-bottom: 30px;
+}
+
+.page-join .leyenda {
+    color: white;
+    background-color: var(--primary-color);
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+.page-join .texto-form {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.page-join .input-formulario {
+    border-color: rgba(13, 10, 44, 0.2);
+    font-size: 1rem;
+    width: 100%;
+    height: 35px;
+    padding: 5px 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background-color: white;
+}
+
+.page-join .metodo-pago, .camiseta {
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+.page-join .opcion-pago {
+    margin-right: 10px;
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.page-join .boton-radio {
+    margin-right: 5px;
+}
+
+.page-join .input-talla {
+    border-color: rgba(13, 10, 44, 0.2);
+    font-size: 1rem;
+    width: 50%;
+    height: 35px;
+    padding: 5px 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background-color: white;
+}
+
+.page-join .asterisco {
+    color: red;
+}
+
+.page-join .obligatorio {
+    color: red;
+    font-size: 0.8rem;
+}
+
+.page-join .boton-enviar {
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin-top: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+/*===============================================================*/
